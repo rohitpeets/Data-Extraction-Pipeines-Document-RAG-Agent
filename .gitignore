@@ -1,0 +1,39 @@
+# Source documents - supplier-controlled, never commit
+*.pdf
+data/
+docs/
+
+# OCR / pipeline artifacts
+*.png
+*.jpg
+*.jpeg
+paddle_output.json
+easyocr_output.json
+field_boxes*.png
+
+# Secrets
+.env
+.env.*
+*.key
+credentials.json
+serviceaccount.json
+
+# Notebooks
+# Commit the .py export instead. If you must commit a notebook,
+# strip outputs first:  nbstripout notebook.ipynb
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
